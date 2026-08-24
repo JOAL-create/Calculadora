@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <script src="./dist/script.js" defer></script>
+    <title>Calculadora</title>
+</head>
+<body>
+    <header class="encabezado">
+        <h1>Calculadora básica</h1>
+    </header>
+    <section class="calculadora">
+        <div id="calculadora">
+            <div id="pantalla">
+                <input type="text" id="num1" readonly placeholder="Número 1">
+                <input type="text" id="num2" readonly placeholder="Número 2">
+                <input type="text" id="resultado" readonly placeholder="Resultado">
+            </div>
+            <div id="btnUSO">
+                <button id="limpar" onclick="LimpiarPantallas()">Limpiar</button>
+                <button id="pantalla1" onclick="UsarPantalla(1)">Número 1</button>
+                <button id="pantalla2" onclick="UsarPantalla(2)">Número 2</button>
+            </div>
+            <div id="botones">
+                <div class="numeros">
+                    <button id="7" onclick="ConcatenarNumero('7')">7</button>
+                    <button id="8" onclick="ConcatenarNumero('8')">8</button>
+                    <button id="9" onclick="ConcatenarNumero('9')">9</button>
+                    <button id="4" onclick="ConcatenarNumero('4')">4</button>
+                    <button id="5" onclick="ConcatenarNumero('5')">5</button>
+                    <button id="6" onclick="ConcatenarNumero('6')">6</button>
+                    <button id="1" onclick="ConcatenarNumero('1')">1</button>
+                    <button id="2" onclick="ConcatenarNumero('2')">2</button>
+                    <button id="3" onclick="ConcatenarNumero('3')">3</button>
+                    <button id="0" onclick="ConcatenarNumero('0')">0</button>
+                    <button id="punto" onclick="ConcatenarNumero('.')">.</button>
+                </div>
+                <div class="operadores">
+                    <button onclick="ObtenerNumeros(); suma()" id="suma">+</button>
+                    <button onclick="ObtenerNumeros(); resta()" id="resta">-</button>
+                    <button onclick="ObtenerNumeros(); mul()" id="multiplicacion">x</button>
+                    <button onclick="ObtenerNumeros(); div()" id="division">/</button>
+                    <button onclick="ObtenerNumeros(); potencia()" id="potencia">n1^n2</button>
+                    <button onclick="ObtenerNumeros(); raiz()" id="raiz">Raiz</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>Jeffrie Otoniel Argueta López</p>
+        <p>5090-23-8396</p>
+    </footer>   
+</body>
+</html>
